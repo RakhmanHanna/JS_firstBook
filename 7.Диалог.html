@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      function Onclick() {
+        const dialog = document.getElementById('Dialog');
+        document.getElementById('showDialog').onclick = function () {
+          dialog.show();
+        };
+        document.getElementById('closedDialog').onclick = function () {
+          dialog.close();
+        };
+      }
+    </script>
+    <title>Document</title>
+  </head>
+  <body>
+    <dialog id="Dialog">
+      <p>Пример html-диалога</p>
+      <button id="closedDialog">Закрыть</button>
+    </dialog>
+    <button id="showDialog" onclick="Onclick();">Открыть окно</button>
+  </body>
+</html>
