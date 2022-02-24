@@ -73,3 +73,10 @@ switch (number > 10) {
     console.log('nope');
     break;
 }
+
+//--------
+let loginStatus = false;
+
+if (name == 'Admin') {
+  loginStatus = 'true';
+}
