@@ -17,3 +17,9 @@ for (let P in John) {
 if ('firstName' in John) {
   console.log(John.firstName);
 }
+
+//
+function firstLastName(first, last) {
+  console.log(first + last);
+}
+firstLastName(Anna, Rakhman);
